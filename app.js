@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var mongoose = require('mongoose');
-var port  	 = process.env.PORT || 8080; 
+var port  	 = process.env.PORT || 8080;
 /*var monk = require('monk');
 var db = monk('localhost:27017/kittywake');*/
 
@@ -38,7 +38,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
-mongoose.connect('mongodb://localhost/kittywake');
+//mongoose.connect('mongodb://localhost/kittywake');
+mongoose.connect('mongodb://petesa:matanga@ec2-54-197-9-167.compute-1.amazonaws.com:8080/kittywake');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
