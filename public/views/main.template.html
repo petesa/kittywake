@@ -1,0 +1,17 @@
+<div id="all-views" class="{{ $ctrl.menuState }}">
+  <div id="main-view">
+    <div id="main-menu" accesskey="">
+      <a href="/" id="logo"><img src="img/logo.png" alt="This is my logo"/></a>
+      <ul>
+        <li><a href="work" ng-click="$ctrl.toggleMenu('close')">Work</a></li>
+        <li><a href="about" ng-click="$ctrl.toggleMenu('close')">About</a></li>
+        <li><a href="contact" ng-click="$ctrl.toggleMenu('close')">Contact</a></li>
+      </ul>
+      <button id="toggle-menu" ng-click="$ctrl.toggleMenu()">Toggle</button>
+    </div>
+  </div><!--
+  --><div class="view-container">
+      <div ui-view class="secondary-view"></div>
+    </div>
+</div>
+<footer> ©2016 Something, Co. </footer>

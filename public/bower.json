@@ -1,0 +1,15 @@
+{
+    "name": "send-us-a-link",
+    "version": "1.0.0",
+    "description": "The portfolio of P. S.",
+    "dependencies": {
+        "angular": "1.5.x",
+        "angular-animate": "1.5.x",
+        "angular-mocks": "1.5.x",
+        "angular-resource": "1.5.x",
+        "angular-route": "1.5.x",
+        "bootstrap": "3.3.x",
+        "jquery": "2.2.x",
+        "angular-ui-router": "0.2.15"
+    }
+}

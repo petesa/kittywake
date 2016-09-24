@@ -1,0 +1,10 @@
+<a href="{{ $root.$state.$current.url.source | previous}}" id="back-button">⨉</a>
+<div id="work">
+  <h1>Work</h1>
+  <ul>
+    <li ng-repeat="project in $ctrl.projects">
+      <a href="work/{{project.name | normalize}}"><img src="{{project.thumbnail}}" alt="{{project.name}}"><span>{{project.name}}</span></a>
+    </li>
+  </ul>
+</div><!--
+--><div ui-view class="secondary-view"></div>

@@ -1,0 +1,15 @@
+<!-- a href="idunno">Work</a -->
+<h1>{{$ctrl.project.name}}</h1>
+  <button class="slider-btn last" ng-click="$ctrl.setScroll($ctrl.currentIndex - 1)" ng-hide=" $ctrl.project.media.length < 2 ">last</button>
+  <div id="slider">
+    <div id="slider-wrap">
+        <media ng-repeat="item in $ctrl.project.media"></media>
+    </div>
+  </div>
+  <button class="slider-btn" ng-click="$ctrl.setScroll($ctrl.currentIndex + 1)" ng-hide="$ctrl.project.media.length < 2">next</button>
+  <ul ng-hide="$ctrl.project.media.length < 2">
+    <li class="slider-dot {{key == $ctrl.currentIndex ? 'selected' : ''}}" ng-repeat="(key, item) in $ctrl.project.media">
+      <button ng-click="$ctrl.setScroll(key)">{{key}}</button>
+    </li>
+  </ul>
+<p ng-bind-html="$ctrl.project.description"></p>

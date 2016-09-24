@@ -1,0 +1,550 @@
+
+/* ------------------------- Basic layout -------------------------------------*/
+html, body, main, div[ui-view], #all-views, #main-view, .view-container, .secondary-view{margin:0; height:100%; overflow:hidden;}
+
+#main-view, .view-container{display:inline-block; vertical-align: middle; float:left;}
+
+.container.one-view .secondary-view{overflow: hidden; opacity:1;}
+.container.two-views .secondary-view{opacity:1; overflow-x:hidden;}
+/*.container.one-view #work{ display:none; }*/
+
+.secondary-view{box-sizing: border-box;}
+.container .secondary-view {overflow:auto; padding:20px 30px 40px;}
+.secondary-view .secondary-view{ padding:20px 0 50px; overflow:hidden;}
+
+.view-container{position:relative; width:0; opacity:0;}
+.secondary-view{position:absolute; top:0; left:0; text-align: center;}
+
+div.ng-scope{width:100%;}
+
+#work{left:0; position:relative; display:inline-block; float:left;}
+h1{margin:0 auto; width:90%; font-weight:normal;}
+h1, p, #work{text-align: left;}
+footer{position:relative; height:28px; top: -28px; text-align: center; background: #FFF;}
+.container .secondary-view p{margin:20px auto; width:90%;}
+
+iframe{display: inline-block;}
+
+.iframe_wrapper{height:100%}
+.h_iframe {position:relative; padding-top: 56%; display:inline-block; width:100%;}
+.h_iframe iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
+/* ------------------------- Main menu -------------------------------------*/
+
+#main-menu{margin-top:-100px; display: inline-block; vertical-align: middle;}
+#main-view:before{content:""; height:100%; display: inline-block; vertical-align: middle}
+#main-menu, #work{opacity:1; left:0;}
+#main-menu ul, #work ul{list-style: none; list-style: none; padding:0; margin:0; clear:both}
+#main-view{text-align: center; width:100%;}
+
+#toggle-menu{
+  display:none;
+  position:absolute;
+  top:10px;
+  right:10px;
+  opacity:0;
+  cursor: pointer;
+}
+
+/* ------------------------- Two views -------------------------------------*/
+
+.container.two-views #main-view{
+  width:20%;
+}
+
+.container.two-views .view-container{
+  width:80%;
+  display:inline-block;
+  vertical-align: middle;
+  opacity:1;
+}
+
+.container.two-views .secondary-view .secondary-view{
+  width:100%;
+  z-index:-1;
+  box-sizing: border-box;
+}
+
+#back-button{
+  float:right;
+  position:relative;
+  z-index: 1;
+  font-size: 0;
+  background-image: url(/img/close.png);
+  background-size:cover;
+  width:20px;
+  height:20px;
+  margin:0 30px;
+}
+
+#back-button:hover{
+  background-image: url(/img/close-hover.png);
+}
+
+/* ------------------------- Detail slider -----------------------------------*/
+
+#slider{
+  position:relative;
+  width:90%;
+  overflow:hidden;
+  display:inline-block;
+  vertical-align: middle;
+  margin-top:30px;
+}
+
+#slider-wrap{
+  display:inline-block;
+}
+
+.detail-item{
+  width:100%;
+  float:left;
+  margin:0 0.5%;
+  vertical-align: middle;
+}
+
+.slider-pos{
+  width:10px;
+  height:10px;
+  cursor:pointer;
+}
+
+/* ------------------------- Transitions -------------------------------------*/
+
+#main-view, .view-container, .container.two-views .secondary-view, .container.one-view .secondary-view, #work, #main-menu, #main-menu ul, #logo, #logo img{
+  transition: 1s ease all;
+}
+
+#toggle-menu{
+  transition: 1s ease opacity;
+}
+
+#slider{
+  transition: 1s ease all;
+  overflow:hidden;
+}
+
+.container.one-view #main-view, .container.one-view .view-container, .detail-item{
+  transition-delay:1s;
+}
+
+.container.one-view .secondary-view.ng-leave-active{
+  opacity:0;
+  left:100px;
+}
+
+.container.two-views .secondary-view.ng-enter{
+  opacity:0;
+  left:100px;
+}
+
+.container.two-views .secondary-view.ng-leave-active{
+  opacity:0;
+  left:100px;
+}
+
+.container.three-views #work{
+  opacity:0;
+  left:100px;
+}
+
+.container.two-views #work{
+  transition-delay: 1s;
+}
+
+.container.two-views.three-views #work{
+  transition-delay: 0s;
+}
+
+.container.one-view #work{
+  display:inline-block;
+  opacity:0;
+}
+
+.container.three-views .secondary-view .secondary-view{
+  z-index:-0;
+}
+
+/*--------------------------- Make things look good ---------------------------------------------------*/
+body{
+  font-family: "proxima-nova-soft";
+  font-size: 16px;
+  color:#737577;
+}
+
+#main-menu, h1{
+  font-size:1.375em;
+}
+
+footer{
+  font-size: 0.75em;
+}
+
+a, a:active, a:visited{
+  color:#737577;
+  text-decoration: none;
+}
+a:hover{
+  color:#FF605E;
+}
+
+::-moz-selection {
+  background:#FF605E;
+  color:#FFFFFF;
+}
+
+::selection {
+  background:#FF605E;
+  color:#FFFFFF;
+}
+
+#logo img{
+  width:100px;
+  margin:10px;
+}
+
+input[type=text], textarea{
+  display:block;
+  width:100%;
+  border:solid 2px #95989A;
+  padding:20px;
+  margin:20px 0;
+  box-sizing: border-box;
+  resize: none;
+  font-size:1.375em;
+  color: #737577;
+}
+
+input[type=text]:focus, textarea:focus{
+  outline:none;
+  border-color: #FF605E;
+}
+
+button{
+  border:solid 2px #95989A;
+  padding:8px;
+  width:140px;
+  cursor:pointer;
+  background:none;
+  font:inherit;
+  outline:none;
+}
+
+form{
+  width:90%;
+  margin:0 auto;
+}
+
+form button{
+  float:right;
+}
+
+button:hover{
+  border-color: #FF605E
+}
+
+button[disabled], button[disabled]:hover{
+  border-color: #C6CACC;
+  color: #C6CACC;
+  cursor: default;
+}
+
+textarea{
+  height:260px;
+}
+
+.slider-btn{
+  display: inline-block;
+  width:20px;
+  font-size: 0;
+  height: 32px;
+  border:none;
+  background:url(/img/slider-arrow.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  padding:0;
+}
+
+.slider-btn.last{
+  transform: scaleX(-1);
+}
+
+.slider-dot{
+  list-style: none;
+  margin:0;
+  padding:0;
+  display:inline-block;
+}
+
+.slider-dot button{
+  width:10px;
+  height:10px;
+  border:none;
+  border-radius:5px;
+  background:#C6CACC;
+  padding:0;
+  font-size: 0;
+  margin:0 5px;
+}
+
+.slider-dot button:hover, .slider-dot.selected button{
+  background:#737577;
+}
+
+#work, #work ul{
+  width:100%;
+}
+
+#work li{
+  display:inline-block;
+  vertical-align: middle;
+  width:30.3333%;
+  margin:10px 1.5%;
+}
+
+#work li img{
+  width:100%;
+}
+
+.secondary-view p a:hover{
+  text-decoration: underline;
+}
+
+.secondary-view p a{
+  color:#FF605E;
+  cursor:pointer;
+}
+.headshot{width:200px; margin:40px auto 10px;}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------- Media Queries -----------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+@media all and (max-width:900px){
+  .slider-btn{
+    width: 10px;
+  }
+  .container .secondary-view {
+    padding: 20px 50px 20px;
+  }
+
+  .container.two-views #main-view{
+    width:20%;
+  }
+
+  .container.two-views .view-container{
+    width:80%;
+  }
+  #work li{
+    width:100%;
+    margin:10px 0;
+  }
+}
+
+@media all and (max-width:640px){
+
+/* ------------------------- Basic adjustments -------------------------------------*/
+  body{
+    overflow:auto;
+  }
+
+  main, div[ui-view], #all-views, #main-view, .view-container, .secondary-view{
+    overflow:visible;
+  }
+
+  #logo img{
+    width:80px;
+  }
+
+.view-container{
+  height:auto;
+}
+
+.container.two-views .secondary-view{
+  overflow:visible;
+}
+
+ul{
+  padding:0;
+}
+
+#work li{
+  margin:20px 0;
+}
+/*---------------------------------- Footer -------------------------------*/
+
+
+  footer{
+    position:fixed;
+    top:auto;
+    bottom:0;
+    width:100%;
+    z-index:1;
+  }
+
+  .container.three-views .secondary-view .secondary-view{
+    height:auto;
+  }
+
+  /*----------------------------------HED-------------------------------*/
+
+  #main-view{
+    position:absolute;
+    z-index:1;
+    background:rgba(255, 255, 255, 1);
+    overflow:hidden;
+  }
+
+  #slider{
+    width:100%;
+  }
+
+  .slider-btn{
+    display: none;
+  }
+
+  .container.two-views #main-view{
+    height: 60px;
+    width:100%;
+  }
+
+  .container .secondary-view{
+    overflow:visible;
+    top:60px;
+  }
+
+  .secondary-view .secondary-view{
+    top:0;
+  }
+
+  #main-menu, .container.two-views #main-view, .container.one-view #logo{
+    transition-delay:1s;
+  }
+
+
+  #logo, .container.one-view #main-menu, .container.one-view #main-view, .container.two-views #toggle-menu{
+    transition-delay: 2s;
+  }
+
+  .container.one-view #main-menu ul, .container.one-view #logo img{
+    transition-delay: 3s;
+  }
+
+  .container.three-views .secondary-view{
+    transition-delay: 0s;
+  }
+
+  #main-menu{
+    opacity:1;
+  }
+
+  .container.two-views #main-menu{
+    margin-top:0;
+    width:90%;
+  }
+
+  #logo{
+    position:relative;
+  }
+
+  #toggle-menu{
+    display:inline-block;
+  }
+
+  .container.one-view #toggle-menu{
+    opacity:0;
+  }
+
+  .container.two-views #toggle-menu{
+    opacity:1;
+  }
+
+  .container.one-view #logo{
+    left:0;
+  }
+
+  .container.two-views #logo{
+    left:-120px;
+  }
+
+  .container.two-views #logo img{
+    width:50px;
+  }
+
+  .container.two-views #main-menu ul{
+    opacity:0;
+  }
+
+  .container.two-views .view-container{
+    width:100%;
+  }
+
+  .container .secondary-view{
+    padding:20px;
+  }
+
+  /* ------------------------- Open the menu -------------------------------------*/
+
+  .container.two-views #all-views.open #main-view{
+     height:100%;
+   }
+
+  .container.two-views #all-views.open #main-view #logo{
+     transition-delay: 0s;
+     left:0;
+   }
+
+  .container.two-views #all-views.open #main-view #main-menu ul{
+    transition-delay: 2s;
+    opacity:1;
+  }
+
+  .container.two-views #all-views.transition.close .secondary-view{
+    transition-delay: 2s;
+    opacity:1;
+  }
+
+  .container.two-views #all-views.close .secondary-view.ng-enter-active{
+    transition-delay: 0s;
+    opacity:0;
+  }
+/*------------------------HED---------------------------*/
+
+  .container.two-views #all-views.open .secondary-view{
+    transition-delay: 0s;
+    opacity:0;
+  }
+
+  .container.two-views #all-views.close .secondary-view{
+    transition-delay: 0s;
+  }
+
+  /*------------------ Toggle button -------------------*/
+
+  #toggle-menu{
+    font-size:0;
+    width:38px;
+    height:24px;
+    background: url(/img/open.png) no-repeat center center;
+    background-size: contain;
+    border:none;
+  }
+
+  #toggle-menu:hover{
+    background-image: url(/img/open-hover.png);
+    outline:red;
+  }
+
+  #all-views.open #toggle-menu{
+    background-image: url(/img/close.png);
+  }
+
+  #all-views.open #toggle-menu:hover{
+    background-image: url(/img/close-hover.png);
+  }
+
+}
