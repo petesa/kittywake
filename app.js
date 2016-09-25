@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var mongoose = require('mongoose');
-var port  	 = process.env.PORT || 80;
+var port  	 = process.env.PORT || 8080;
 /*var monk = require('monk');
 var db = monk('localhost:27017/kittywake');*/
 
