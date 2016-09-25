@@ -39,7 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 //mongoose.connect('mongodb://localhost/kittywake');
-mongoose.connect('mongodb://petesa:matanga37@ec2-54-197-9-167.compute-1.amazonaws.com:27017/kittywake');
+mongoose.connect('mongodb://kwake:matanga71@ec2-54-197-9-167.compute-1.amazonaws.com:27017/kittywake');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
