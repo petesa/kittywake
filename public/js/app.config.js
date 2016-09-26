@@ -48,22 +48,26 @@ angular.
           parent:"main",
           url: "work",
           template: "<work></work>",
-          containerClass:"two-views"
+          containerClass:"two-views",
+          sectionName:"Work"
         })
         .state('work.detail', {
           url: "/:project",
           template: "<detail></detail>",
-          containerClass:"two-views three-views"
+          containerClass:"two-views three-views",
+          sectionName:"Work"
         })
         .state('main.about', {
           url: "about",
           template: "<text name='about'></text>",
-          containerClass:"two-views"
+          containerClass:"two-views",
+          sectionName:"About"
         })
         .state('main.contact', {
           url: "contact",
           template: "<contact></contact>",
-          containerClass:"two-views"
+          containerClass:"two-views",
+          sectionName:"Contact"
         })
 
     }

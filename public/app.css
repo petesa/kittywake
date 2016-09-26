@@ -62,6 +62,7 @@ iframe{display: inline-block;}
   width:100%;
   z-index:-1;
   box-sizing: border-box;
+  overflow-y: auto
 }
 
 #back-button{
@@ -347,6 +348,8 @@ textarea{
 
 @media all and (max-width:640px){
 
+
+
 /* ------------------------- Basic adjustments -------------------------------------*/
   body{
     overflow:auto;
@@ -364,8 +367,10 @@ textarea{
   height:auto;
 }
 
-.container.two-views .secondary-view{
+.container.two-views .secondary-view, .container.one-view .secondary-view{
   overflow:visible;
+  height:auto;
+  padding-bottom: 50px;
 }
 
 ul{
@@ -374,6 +379,9 @@ ul{
 
 #work li{
   margin:20px 0;
+}
+.container .secondary-view .secondary-view{
+  overflow:visible;
 }
 /*---------------------------------- Footer -------------------------------*/
 
@@ -394,7 +402,7 @@ ul{
 
   #main-view{
     position:absolute;
-    z-index:1;
+    z-index:2;
     background:rgba(255, 255, 255, 1);
     overflow:hidden;
   }
@@ -489,6 +497,10 @@ ul{
 
   /* ------------------------- Open the menu -------------------------------------*/
 
+.container.two-views .secondary-view.ng-enter{
+  transition-delay: 1s;
+}
+
   .container.two-views #all-views.open #main-view{
      height:100%;
    }
@@ -498,13 +510,33 @@ ul{
      left:0;
    }
 
+   .container.two-views #all-views.open #main-view #logo img{
+     transition-delay: 2s;
+     width:80px;
+   }
+
   .container.two-views #all-views.open #main-view #main-menu ul{
     transition-delay: 2s;
     opacity:1;
   }
 
-  .container.two-views #all-views.transition.close .secondary-view{
+  .container.two-views #all-views.open #main-view #main-menu{
+    transition-delay: 1s;
+    margin-top:-100px;
+  }
+
+  /*.container.two-views #all-views.transition.close .secondary-view{
+    transition-delay: 0s;
+    opacity:0;
+    /*transition-delay: 2s;
+    opacity:1;*/
+  }
+
+  /*.container.two-views #all-views.close .secondary-view{
     transition-delay: 2s;
+  }
+
+  .container.one-view #all-views.close .secondary-view{
     opacity:1;
   }
 
@@ -514,7 +546,7 @@ ul{
   }
 /*------------------------HED---------------------------*/
 
-  .container.two-views #all-views.open .secondary-view{
+/*  .container.two-views #all-views.open .secondary-view{
     transition-delay: 0s;
     opacity:0;
   }

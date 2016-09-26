@@ -68,6 +68,7 @@
 
           Database.query({collection:'work'},function(projects){
             var normalized = $stateParams.project.replace(/\b\w/g, function(l){ return l.toUpperCase() }).replace(/-/g, ' ');
+            document.title = "Pedro *S* | "+normalized;
             var projects = $filter("filter")(projects, {name: normalized});
             self.project = projects[0];
             self.project.description = $sce.trustAsHtml(projects[0].description);
