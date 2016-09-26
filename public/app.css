@@ -62,7 +62,8 @@ iframe{display: inline-block;}
   width:100%;
   z-index:-1;
   box-sizing: border-box;
-  overflow-y: auto
+  /*overflow-y: auto*/
+  overflow: visible;
 }
 
 #back-button{
