@@ -2,7 +2,7 @@
 <p>Are you aching to know more? You can’t wait to work with me in an awesome project? You find my website annoying and poorly designed? I want to hear about it.</p>
 <p ng-hide="{{$ctrl.response === 'undefined'}}" class="feedback">{{$ctrl.response}}</p>
 <form id="contact-form">
-  <input type="text" name="email" ng-model="$ctrl.email" ng-keyup="$ctrl.verify()" placeholder="Your email address"></input>
+  <input type="text" name="email" ng-model="$ctrl.email" placeholder="Your email address"></input>
   <textarea name="message" ng-model="$ctrl.message" placeholder="Whatever you feel like saying"></textarea>
   <button id="send-btn" ng-click="$ctrl.sendEmail()" disabled="disabled">Hit me up!</button>
 </form>

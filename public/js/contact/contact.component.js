@@ -16,6 +16,15 @@ angular.
             $("#send-btn").prop('disabled', true);
         }
 
+        $("input[name=email]").on({'change keyup input click': self.verify});
+        var int
+        $("input[name=email]").on({'focus blur':function(event){
+          if(event.type == "focus")
+            int = setInterval(self.verify, 100);
+          else
+            clearInterval(int);
+        }})
+
         self.sendEmail = function(){
           var data = {
             email: self.email,
