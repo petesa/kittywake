@@ -10,7 +10,7 @@ html, body, main, div[ui-view], #all-views, #main-view, .view-container, .second
 
 .secondary-view{box-sizing: border-box;}
 .container .secondary-view {overflow:auto; padding:20px 30px 40px;}
-.secondary-view .secondary-view{ padding:20px 0 50px; overflow:hidden;}
+.secondary-view .secondary-view{ padding:20px 0 30px; overflow:hidden; height:auto;}
 
 .view-container{position:relative; width:0; opacity:0;}
 .secondary-view{position:absolute; top:0; left:0; text-align: center;}
@@ -20,7 +20,7 @@ div.ng-scope{width:100%;}
 #work{left:0; position:relative; display:inline-block; float:left;}
 h1{margin:0 auto; width:90%; font-weight:normal;}
 h1, p, #work{text-align: left;}
-footer{position:relative; height:28px; top: -28px; text-align: center; background: #FFF;}
+footer{position:relative; height:26px; top: -36px; text-align: center; background: #FFF; padding-top:10px;}
 .container .secondary-view p{margin:20px auto; width:90%;}
 
 iframe{display: inline-block;}
