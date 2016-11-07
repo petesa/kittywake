@@ -174,8 +174,12 @@ body{
   color:#737577;
 }
 
-#main-menu, h1{
+#main-menu{
   font-size:1.375em;
+}
+
+h1{
+  font-size:2em;
 }
 
 footer{
