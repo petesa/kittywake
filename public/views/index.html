@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pedro *S*{{$root.$state.$current.sectionName != undefined ? " | "+$root.$state.$current.sectionName : ""}}</title>
+  <title ng-bind=" $root.$state.$current.sectionName != undefined ? 'Pedro *S* | '+$root.$state.$current.sectionName : 'Pedro *S*' ">Pedro *S*</title>
   <base href="/">
   <meta name="description" content="The portfolio of Pedro Sánchez Lira, UX, UI and Visual designer">
   <meta property="fb:app_id" content="1102480433199458" />
