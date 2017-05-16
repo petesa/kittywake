@@ -3,16 +3,26 @@ var router = express.Router();
 var schemas = {};
     schemas.work = require('../models/work');
     schemas.text = require('../models/text');
+    schemas.chatbot = require('../models/chatbot');
 var app = express();
 
 router.get('/api/:collection', function(req, res) {
-
-    schemas[req.params.collection].find(function(err, texts) {
-      if (err)
-        return console.error(err);
-      res.json(texts);
-    });
-
+    if(req.params.collection == 'chatbot'){
+      //var input = req.query.input;
+      var talkParams = {input: req.query.input}
+      schemas[req.params.collection].talk(talkParams, function (err, text){
+        if (!err){
+          console.log(text);
+          res.send(text);
+        }
+      })
+    }else{
+      schemas[req.params.collection].find(function(err, texts) {
+        if (err)
+          return console.error(err);
+        res.json(texts);
+      });
+    }
 });
 
 /*router.get('/api/work', function(req, res) {
@@ -29,14 +39,14 @@ router.post('/email',function(req,res){
   var nodemailer = require('nodemailer');
 
   // create reusable transporter object using the default SMTP transport
-  var transporter = nodemailer.createTransport('smtps://pedro.sanchezlira%40gmail.com:sprezzaturaSjalvklart37@smtp.gmail.com');
+  var transporter = nodemailer.createTransport('smtps://pedro%40pedroese.com:matan.gaK437@mx.ecloudpanel.com');
 
   // setup e-mail data with unicode symbols
   var mail = req.body.email;
   var message = req.body.message;
 
   var mailOptions = {
-    from: '"Pedro Sanchez Lira" <pedro.sanchezlira@gmail.com>', // sender address
+    from: '"Pedro *S*" <pedro@pedroese.com>', // sender address
     to: 'pedro.sanchez@hyperisland.se', // list of receivers
     subject: 'Hello ✔', // Subject line
     text: 'Hello world 🐴', // plaintext body
@@ -53,9 +63,21 @@ router.post('/email',function(req,res){
   });
 });
 
+/*router.get('*', function(req, res, next){
+  if(req.headers.host == 'chatbot.localhost:8080'){  //if it's a sub-domain
+    /*req.url = '/chatbot' + req.url;  //append some text yourself
+    res.sendfile('./chatbot/index.html');
+  }
+  next();
+});*/
+
 /* GET home page. */
 router.get('*', function(req, res) {
+  if(req.headers.host == 'pedrobot.localhost:8080'){  //if it's a sub-domain
+    res.sendfile('./chatbot/index.html');
+  }else{
     res.sendfile('./public/views/index.html'); // load our public/index.html file
+  }
 });
 
 module.exports = router;

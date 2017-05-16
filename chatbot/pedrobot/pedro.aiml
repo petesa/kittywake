@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- Question 1 *** Where are you from? *** -->
+  <category>
+      <pattern>^ ARE YOU FROM ^</pattern>
+      <template><srai>^ DO YOU COME FROM ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ WHERE WERE YOU BORN ^</pattern>
+      <template><srai>^ DO YOU COME FROM ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ DO YOU HAIL FROM ^</pattern>
+      <template><srai>^ DO YOU COME FROM ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ ARE YOU HAILING FROM ^</pattern>
+      <template><srai>^ DO YOU COME FROM ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ DID YOU GROW UP ^</pattern>
+      <template><srai>^ DO YOU COME FROM ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ DO YOU COME FROM ^</pattern>
+      <template>mexico</template>
+  </category>
+
+<!-- Question 2.2 *** Where are you working at? *** -->
+  <category>
+      <pattern>^ ARE YOU WORKING ^</pattern>
+      <template><srai>^ DO YOU WORK ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ DO YOU WORK ^</pattern>
+      <template>nk</template>
+  </category>
+<!-- Question 2.3 *** Where do you live? *** -->
+  <category>
+      <pattern>^ ARE YOU LIVING ^</pattern>
+      <template><srai>^ DO YOU LIVE ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ DO YOU LIVE ^</pattern>
+      <template>stockholm</template>
+  </category>
+
+ <!-- Question 3 *** What do you do? *** -->
+
+<category><pattern>_ YOU * WORK WITH *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU * WORK WITH </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU WORK WITH *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU WORK WITH </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU * WORK WITH *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU * WORK WITH </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU WORK WITH *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ WORK WITH * YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ WORK WITH * YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ WORK WITH YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ WORK WITH YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> WORK WITH * YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> WORK WITH * YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> WORK WITH YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> WORK WITH YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+
+<category><pattern>_ YOU * JOB *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU * JOB </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU JOB *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU JOB </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU * JOB *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU * JOB </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU JOB *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ JOB * YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ JOB * YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ JOB YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ JOB YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> JOB * YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> JOB * YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> JOB YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> JOB YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+
+<category><pattern>_ YOU * DO FOR A LIVING *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU * DO FOR A LIVING </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU DO FOR A LIVING *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ YOU DO FOR A LIVING </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU * DO FOR A LIVING *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU * DO FOR A LIVING </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> YOU DO FOR A LIVING *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ DO FOR A LIVING * YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ DO FOR A LIVING * YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ DO FOR A LIVING YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern>_ DO FOR A LIVING YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> DO FOR A LIVING * YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> DO FOR A LIVING * YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> DO FOR A LIVING YOU *</pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+<category><pattern> DO FOR A LIVING YOU </pattern>
+<template><srai>^ YOUR JOB ^</srai></template></category>
+
+<category>
+    <pattern>^ DO YOU DO ^</pattern>
+    <template><srai>^ YOUR JOB ^</srai></template>
+</category>
+
+ <category>
+      <pattern>^ YOUR JOB ^</pattern>
+      <template>digital-designer</template>
+ </category>
+
+
+ <!-- Question 4 *** What do you like doing? *** -->
+
+  <category><pattern>_ YOUR * HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOUR * HOBBY </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOUR HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOUR HOBBY </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOUR * HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOUR * HOBBY </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOUR HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY * YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY * YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY * YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY * YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+
+<category><pattern>_ YOUR * HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOUR * HOBBIES </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOUR HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOUR HOBBIES </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOUR * HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOUR * HOBBIES </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOUR HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES * YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES * YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES * YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES * YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES YOUR *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES YOUR </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+
+<category><pattern>_ YOU * HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU * HOBBY </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU HOBBY </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * HOBBY </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU HOBBY *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBY YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBY YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+
+<category><pattern>_ YOU * HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU * HOBBIES </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU HOBBIES </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * HOBBIES </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU HOBBIES *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ HOBBIES YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> HOBBIES YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+
+<category><pattern>_ YOU * FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU * FREE TIME </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU FREE TIME </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * FREE TIME </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+
+<category><pattern>_ YOU * FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU * FREE TIME </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ YOU FREE TIME </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU * FREE TIME </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> YOU FREE TIME *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern>_ FREE TIME YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME * YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME * YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME YOU *</pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+<category><pattern> FREE TIME YOU </pattern>
+<template><srai>^ DO YOU LIKE DOING ^</srai></template></category>
+
+<category>
+    <pattern>^ DO YOU LIKE TO DO ^</pattern>
+    <template><srai>^ DO YOU LIKE DOING ^</srai></template>
+</category>
+<category>
+    <pattern>^ DO YOU LIKE DOING ^</pattern>
+    <template>hobby</template>
+</category>
+<!-- Question 5 *** Where do you study? *** -->
+  <category>
+      <pattern>^ ARE YOU STUDYING ^</pattern>
+      <template><srai>^ DO YOU STUDY ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ YOUR SCHOOL ^</pattern>
+      <template><srai>^ DO YOU STUDY ^</srai></template>
+  </category>
+  <category>
+      <pattern>^ DO YOU STUDY ^</pattern>
+      <template>hyper</template>
+  </category>
+ <!-- Question 6 *** What is your favorite color *** -->
+    <category>
+      <pattern>^ FAVORITE COLOR ^</pattern>
+      <template>color</template>
+    </category>
+<!-- Question 7 *** How old are you? *** -->
+
+      <category><pattern>_ YOU * OLD *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ YOU * OLD </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ YOU OLD *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ YOU OLD </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> YOU * OLD *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> YOU * OLD </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> YOU OLD *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ OLD * YOU *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ OLD * YOU </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ OLD YOU *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ OLD YOU </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> OLD * YOU *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> OLD * YOU </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> OLD YOU *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> OLD YOU </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+
+<category><pattern>_ YOUR * AGE *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ YOUR * AGE </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ YOUR AGE *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ YOUR AGE </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> YOUR * AGE *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> YOUR * AGE </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> YOUR AGE *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ AGE * YOUR *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ AGE * YOUR </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ AGE YOUR *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern>_ AGE YOUR </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> AGE * YOUR *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> AGE * YOUR </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> AGE YOUR *</pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+<category><pattern> AGE YOUR </pattern>
+<template><srai>^ TU EDAD ^</srai></template></category>
+
+    <category>
+      <pattern>^ TU EDAD ^</pattern>
+      <template>age</template>Ho
+    </category>
+<!-- Question 7 *** What's your favorite food? *** -->
+ <category><pattern>_ FAVORITE * MEAL *</pattern>
+<template><srai>^ MEAL FAVORITE ^</srai></template></category>
+<category><pattern>_ FAVORITE * MEAL </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FAVORITE MEAL *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FAVORITE MEAL </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FAVORITE * MEAL *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FAVORITE * MEAL </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FAVORITE MEAL *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ MEAL * FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ MEAL * FAVORITE </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ MEAL FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ MEAL FAVORITE </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> MEAL * FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> MEAL * FAVORITE </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> MEAL FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>^ MEAL FAVORITE ^</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+
+    <category><pattern>_ FAVORITE * FOOD *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FAVORITE * FOOD </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FAVORITE FOOD *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FAVORITE FOOD </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FAVORITE * FOOD *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FAVORITE * FOOD </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FAVORITE FOOD *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FOOD * FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FOOD * FAVORITE </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FOOD FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>_ FOOD FAVORITE </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FOOD * FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FOOD * FAVORITE </pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern> FOOD FAVORITE *</pattern>
+<template><srai>^ WHAT DO YOU LIKE TO EAT ^</srai></template></category>
+<category><pattern>^ WHAT DO YOU LIKE TO EAT ^</pattern>
+<template>food</template></category>
+
+</aiml>

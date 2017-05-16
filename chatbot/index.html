@@ -1,0 +1,63 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="sendUsALink" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>** Pedrobot **</title>
+  <base href="/">
+  <meta name="description" content="Pedrobot knows everything about Pedro Sánchez Lira, UX, UI and Visual designer.">
+  <meta property="fb:app_id" content="1102480433199458" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pedrobot.pedroese.com/" />
+	<meta property="og:title" content="Pedrobot" />
+	<meta property="og:site_name" content="Pedrobot" />
+  <meta name="og:description" content="Pedrobot knows everything about Pedro Sánchez Lira, UX, UI and Visual designer.">
+	<meta property="og:image" content="http://pedrobot.pedroese.com/img/social.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <script src="libs/jquery/dist/jquery.js"></script>
+  <script src="https://use.typekit.net/amt8ght.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="js/pedrobot/setup.js"></script>
+  <script src="js/pedrobot/standby.js"></script>
+  <script src="js/pedrobot/mexico.js"></script>
+  <script src="js/pedrobot/stockholm.js"></script>
+  <script src="js/pedrobot/nk.js"></script>
+  <script src="js/pedrobot/digitaldesigner.js"></script>
+  <script src="js/pedrobot/hobby.js"></script>
+  <script src="js/pedrobot/hyper.js"></script>
+  <script src="js/pedrobot/color.js"></script>
+  <script src="js/pedrobot/age.js"></script>
+  <script src="js/pedrobot/food.js"></script>
+  <script src="js/pedrobot/hello.js"></script>
+  <script src="js/pedrobot/meaninglife.js"></script>
+  <script src="js/pedrobot/noanswer.js"></script>
+  <script src="js/pedrobot/loading.js"></script>
+  <script src="js/pedrobot/main.js"></script>
+  <!-- script src="libs/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script -->
+</head>
+<body>
+  <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:400px; height:400px">
+    <canvas id="animation"></canvas>
+    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:400px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+  </div>
+  <form id="pedrobot">
+    <button id="subtitles"  type="button">Turn subtitles on</button>
+    <input type="text" name="query" id="query" list="questions" autocomplete="off" placeholder="Write a question for Pedrobot">
+    <datalist id="questions">
+      <option value="Where are you from?">
+      <option value="Where do you live?">
+      <option value="What do you do for a living?">
+      <option value="Where do you work?">
+      <option value="Where do you study?">
+      <option value="What do you do on your free time?">
+    </datalist>
+    <button id="submit" type="button">Ask</button>
+  </form>
+</body>
+</html>

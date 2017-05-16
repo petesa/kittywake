@@ -541,7 +541,7 @@ ul{
     transition-delay: 0s;
     opacity:0;
     /*transition-delay: 2s;
-    opacity:1;*/
+    opacity:1;
   }
 
   /*.container.two-views #all-views.close .secondary-view{
@@ -592,3 +592,13 @@ ul{
   }
 
 }
+/*----------------------- Pedrobot ---------------------*/
+
+#pedrobot{max-width:800px; width:80%}
+#animation_container{margin:0 auto;}
+#pedrobot button.on{background:#FF605E; border-color:#FF605E; color:#FFFFFF;}
+#pedrobot button.off:hover{border-color:#FF605E;}
+#pedrobot button.off{background:none; border-color:inherit;}
+#pedrobot #query {float:left;}
+#pedrobot #query::placeholder{color:#C5C7C9;}
+#pedrobot #submit{font-size: 1.375em;}
