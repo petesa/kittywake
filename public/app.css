@@ -593,8 +593,8 @@ ul{
 
 }
 /*----------------------- Pedrobot ---------------------*/
-
-#pedrobot{max-width:800px; width:80%}
+body#scroll, #pedrobot{overflow:auto;}
+#pedrobot{max-width:800px; width:80%; padding-bottom:100px;}
 #animation_container{margin:0 auto;}
 #pedrobot button.on{background:#FF605E; border-color:#FF605E; color:#FFFFFF;}
 #pedrobot button.off:hover{border-color:#FF605E;}
