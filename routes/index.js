@@ -73,7 +73,7 @@ router.post('/email',function(req,res){
 
 /* GET home page. */
 router.get('*', function(req, res) {
-  if(req.headers.host == 'pedrobot.localhost:8080'){  //if it's a sub-domain
+  if(req.headers.host == 'pedrobot.pedroese.com'){  //if it's a sub-domain
     res.sendfile('./chatbot/index.html');
   }else{
     res.sendfile('./public/views/index.html'); // load our public/index.html file
